@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ---------- Banner background ---------- */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("https://png.pngtree.com/thumb_back/fh260/background/20230516/pngtree-book-shelf-image_2563575.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ❌ Removed wrong duplicate .navbar rule that broke layout:
+.navbar {
+    width: 120px;
+    cursor: pointer;
+}
+*/
+
+/* ---------- Navbar links ---------- */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* ---------- Hover underline animation ---------- */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #966344;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+/* ✅ Correct hover selector (no space before ::after) */
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* ---------- Content text ---------- */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(203, 211, 218);
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.content b {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #b48a71, #4e1e0b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* ---------- Button animation ---------- */
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #885a3d;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    background: #885a3d;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}

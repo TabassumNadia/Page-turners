@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <h1>Book Shop</h1>
+        <input type="text" id="search" placeholder="Search...">
+        <nav>
+            <ul>
+                <li><a href="pageturners_index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="book-list">
+        <section id="fiction">
+            <h2>Fiction</h2>
+            <div id="literary-fiction" class="book-category">
+                <h3>Literary Fiction</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="mystery" class="book-category">
+                <h3>Mystery</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="thriller" class="book-category">
+                <h3>Thriller</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="science-fiction" class="book-category">
+                <h3>Science Fiction</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="fantasy" class="book-category">
+                <h3>Fantasy</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="historical-fiction" class="book-category">
+                <h3>Historical Fiction</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="horror" class="book-category">
+                <h3>Horror</h3>
+                <div class="book-grid"></div>
+            </div>
+        </section>
+        
+        <section id="non-fiction">
+            <h2>Non-Fiction</h2>
+            <div id="biography" class="book-category">
+                <h3>Biography</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="memoir" class="book-category">
+                <h3>Memoir</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="self-help" class="book-category">
+                <h3>Self-Help</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="history" class="book-category">
+                <h3>History</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="science" class="book-category">
+                <h3>Science</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="travel" class="book-category">
+                <h3>Travel</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="true-crime" class="book-category">
+                <h3>True Crime</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="essays" class="book-category">
+                <h3>Essays</h3>
+                <div class="book-grid"></div>
+            </div>
+        </section>
+
+        <section id="children">
+            <h2>Children’s Books</h2>
+            <div id="picture-books" class="book-category">
+                <h3>Picture Books</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="early-readers" class="book-category">
+                <h3>Early Readers</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="middle-grade" class="book-category">
+                <h3>Middle Grade</h3>
+                <div class="book-grid"></div>
+            </div>
+        </section>
+
+        <section id="audiobooks">
+            <h2>Audiobooks</h2>
+            <div class="book-grid"></div>
+        </section>
+
+        <section id="other">
+            <h2>Other Books</h2>
+            <div id="textbooks" class="book-category">
+                <h3>Textbooks</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="reference-books" class="book-category">
+                <h3>Reference Books</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="cookbooks" class="book-category">
+                <h3>Cookbooks</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="manuals" class="book-category">
+                <h3>Manuals</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="journals-diaries" class="book-category">
+                <h3>Journals and Diaries</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="graphic-novels-comics" class="book-category">
+                <h3>Graphic Novels and Comics</h3>
+                <div class="book-grid"></div>
+            </div>
+            <div id="poetry-books" class="book-category">
+                <h3>Poetry Books</h3>
+                <div class="book-grid"></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal" id="modal">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2 id="modal-title">Book Title</h2>
+            <img src="" alt="Book Cover" id="modal-image">
+            <p id="modal-description">Book description goes here.</p>
+            <a id="download-book" href="#" download>Download</a>
+            <a id="read-online" href="#" target="_blank">Read Online</a>
+            <a id="download-audiobook" href="#" download>Audiobook</a>
+        </div>
+    </div>
+
+    <script src="pageturners.js"></script>
+</body>
+</html>
